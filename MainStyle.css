@@ -1,0 +1,45 @@
+body {
+  background-color: #aae3ff;
+  height: auto;
+}
+#thumbnail_circle{
+  border-radius: 100%;
+  border
+}
+#thumbnail{
+  background-position: center center;
+  padding-left:20px;
+  padding-right:20px;
+}
+#BigFrame{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+#MainFrame{
+  border:solid #ff291a;
+  background-color: #e5e5e5;
+}
+
+#MainText{
+  text-align: center;
+  font-size:60px;
+  margin-bottom: 10px;
+  margin-top:10px;
+  margin-bottom: 0px;
+}
+#SubText{
+  font-size:25px;
+  text-align: center;
+  margin-top:0px;
+  color: gray;
+}
+#Login{
+  border: 2px solid #ff6c6c;
+  width: 42px;
+  background-color: #f8a9c4;
+  float: right;
+}
+#Login>a{
+  color: white;
+  text-decoration: none;
+}

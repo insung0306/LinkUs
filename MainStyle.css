@@ -1,23 +1,40 @@
 body {
-  background-color: #aae3ff;
-  height: auto;
-}
-#thumbnail_circle{
-  border-radius: 100%;
-  border
-}
-#thumbnail{
-  background-position: center center;
-  padding-left:20px;
-  padding-right:20px;
+  background-color: #000;
+  background-image: url("MainBackgroundImeage.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 #BigFrame{
-  padding-left: 200px;
-  padding-right: 200px;
+  max-width: 68em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+  opacity: 1;
+  filter: none;
+  -moz-transition: opacity 1s ease, -moz-filter 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-filter 1s ease;
+  -ms-transition: opacity 1s ease, -ms-filter 1s ease;
+  transition: opacity 1s ease, filter 1s ease;
 }
 #MainFrame{
-  border:solid #ff291a;
-  background-color: #e5e5e5;
+  text-align: center;
+  padding: 6em 0 4em 0;
+  border:solid #ffc10700;
+  background-color: #ffce8500;
+}
+
+#thumbnail_circle{
+  border-radius: 100%;
+  display: block;
+  width: 10em;
+}
+#thumbnail{
+  border-radius: 100%;
+  display: inline-block;
+  margin: 0 0 2em 0;
+  padding: 0.5em;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
 }
 
 #MainText{
@@ -26,6 +43,7 @@ body {
   margin-bottom: 10px;
   margin-top:10px;
   margin-bottom: 0px;
+  color: white;
 }
 #SubText{
   font-size:25px;
@@ -34,12 +52,26 @@ body {
   color: gray;
 }
 #Login{
-  border: 2px solid #ff6c6c;
-  width: 42px;
-  background-color: #f8a9c4;
-  float: right;
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
 }
 #Login>a{
+  font-size:2rem;
   color: white;
   text-decoration: none;
+  display: inline-block;
+  border: 2px solid #ff6c6c;
+  background-color: #f8a9c4;
+  border-radius: 10%;
+  transition:all 0.1s;
+  text-shadow: 0px -2px rgba(0, 0, 0, 0.44);
+
+}
+@media screen and (max-width: 1280px) {
+
+  #BigFrame {
+    padding: 4em 0 2em 0;
+  }
+
 }
